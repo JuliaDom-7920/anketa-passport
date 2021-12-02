@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="cssREG02.css">
+  <title>Анкета</title>
+</head>
+<body>
+	<div class="container">
+		<div class="description">
+			<div class="description-text">
+				<h1>АНКЕТА</h1>
+				<h2>отримувача паспорта громадянина України для виїзду за кордон</h2>
+				<p>Сповіщаю, що підстав, які відповідно до статті 6 Закону України "Про порядок виїзду з України і в’їзду в Україну громадян України" обмежують моє право на виїзд за кордон, немає.</p>
+			</div>
+			<div class="photo">
+				<img id="photo-preview" src="">
+			</div>
+			<div id="photo-upload">
+				<label>
+					<input type="file" name="photo" id="photo">
+					<span>Завантажити фото</span>
+				</label>
+			</div>
+		</div>
+		<form id="form">
+			<p class="title">Для виклику підказки, наведіть курсор миші на поле введення.<br>Обов’язкові поля позначені зірочкою.</p>
+			<div class="row">
+				<div class="punkt-1 punkt">
+					<span class="punkt-num">1</span>
+					<div class="string-1">
+						<label for="1-surname-person"><span class="required" >* </span>Прізвище</label>
+						<div class="d-inline-block vertical-top">
+							<input type="text" name="surname" id="1-surname-person">
+						</div>
+						<label for="1-name-person"><span class="required" >* </span>ім’я та по-батькові</label>
+						<div class="d-inline-block vertical-top">
+							<input type="text" name="name-surname" id="1-name-person">
+						</div>
+					</div>
+					<div class="string-2 d-flex vertical-top">
+						<div class="vertical-block">
+							<p>Колишні</p>
+						</div>
+						<div>
+							<label for="1-surname-person-2">Прізвище</label>
+							<div class="d-inline-block vertical-top">
+								<input type="text" name="surname" id="1-surname-person-2">
+							</div>
+							<label for="1-name-person-2">ім’я та по-батькові</label>
+							<div class="d-inline-block vertical-top">
+								<input type="text" name="name-surname" id="1-name-person-2">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="punkt-10 punkt">
+					<span class="punkt-num">10</span>
+					<div class="string-1">
+						<label for="10-type">тип</label>
+						<div class="d-inline-block vertical-top">
+							<input type="text" name="10-type" id="10-type">
+						</div>
+					</div>
+					<div class="string-2 d-flex">
+						<div class="vertical-block">
+							<p>Раніше<br>виданий<br>паспорт</p>
+						</div>
+						<div>
+							<label for="10-num">номер</label>
+							<div class="d-inline-block vertical-top">
+								<input type="text" name="10-num" id="10-num">
+							</div>
+							<label for="10-date">дата видачі</label>
+							<div class="d-inline-block vertical-top">
+								<input type="date" name="date" id="10-date">
+							</div>
+							<label for="10-duration">строк дії</label>
+							<div class="d-inline-block vertical-top">
+								<input type="date" name="date" id="10-duration">
+							</div>
+							<label for="10-agency">орган, що видав</label>
+							<div class="d-inline-block vertical-top">
+								<input type="text" name="10-agency" id="10-agency">
+							</div>
+						</div>
+					</div>
+					<p class="string-3">(зазначений розділ повторюється залежно від кількості документів)</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="punkt-2 punkt">
+					<span class="punkt-num">2</span>
+					<div class="string-1">
+						<label for="2-famale"><span class="required" >* </span>Стать</label>
+						<div class="d-inline-block vertical-top">
+							<label class="radio-1" for="2-famale">жіноча</label>
+							<div class="d-inline-block vertical-middle vertical-top">
+								<input type="radio" name="sex" id="2-famale">
+							</div>
+							<label class="radio-1" for="2-male">чоловіча</label>
+							<div class="d-inline-block vertical-middle vertical-top">
+								<input type="radio" name="sex" id="2-male">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="punkt-3 punkt">
+					<span class="punkt-num">3</span>
+					<div class="string-1">
+						<label for="3-date-hb"><span class="required" >* </span>Дата народження</label>
+						<div class="d-inline-block vertical-top">
+							<input type="date" name="date" id="3-date-hb">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="punkt-4 punkt">
+					<span class="punkt-num">4</span>
+					<div class="string-1">
+						<label for="4-idnt-num"><span class="required" >* </span>Ідентифікаційний номер</label>
+						<div class="d-inline-block vertical-top">
+							<input type="text" name="identification-num" id="4-idnt-num">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="punkt-5 punkt">
+					<span class="punkt-num">5</span>
+					<div class="string-1">
+						<label for="5-state"><span class="required" >* </span>держава</label>
+						<div class="d-inline-block vertical-top">
+							<input type="text" name="5-state" id="5-state">
+						</div>
+					</div>
+					<div class="string-2 d-flex">
+						<div class="vertical-block">
+							<p>Місце<br>народження</p>
+						</div>
+						<div>
+							<label for="5-region"><span class="required" >* </span>область</label>
+							<div class="d-inline-block vertical-top">
+								<input type="text" name="5-region" id="5-region">
+							</div>
+							<label for="5-district">район/місто</label>
+							<div class="d-inline-block vertical-top">
+								<input type="text" name="5-district" id="5-district">
+							</div>
+							<label for="5-village">селище/село</label>
+							<div class="d-inline-block vertical-top">
+								<input type="text" name="5-village" id="5-village">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="punkt-11 punkt">
+					<span class="punkt-num">11</span>
+					<div class="string-1">
+						<div class="horizontal-block">
+							<p><span class="required" >* </span>Останні п’ять років з відомостями, <br>що становлять державну таємницю,</p>
+						</div>
+					</div>
+					<div class="string-2">
+						<div>
+							<label class="checkbox" for="11-yes">обізнаний</label>
+							<div class="d-inline-block vertical-top vertical-middle border-none">
+								<input type="checkbox" name="data" id="11-yes">
+							</div>
+						</div>
+						<div>
+							<label class="checkbox" for="11-no">був обізнаний</label>
+							<div class="d-inline-block vertical-top vertical-middle border-none">
+								<input type="checkbox" name="data" id="11-no">
+							</div>
+						</div>
+						<div>
+							<label class="checkbox" for="11-no-no">не обізнаний і не був обізнаний</label>
+							<div class="d-inline-block vertical-top vertical-middle border-none">
+								<input type="checkbox" name="data" id="11-no-no">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="punkt-6 punkt">
+					<span class="punkt-num">6</span>
+					<div class="string-1">
+						<label for="6-seria"><span class="required" >* </span>серія</label>
+						<div class="d-inline-block vertical-top">
+							<input type="text" name="6-seria" id="6-seria">
+						</div>
+					</div>
+					<div class="string-2 d-flex">
+						<div class="vertical-block">
+							<p>Паспорт<br>громадянина<br>України</p>
+						</div>
+						<div>
+							<label for="6-num"><span class="required" >* </span>номер</label>
+							<div class="d-inline-block vertical-top">
+								<input type="text" name="6-num" id="6-num">
+							</div>
+							<label for="6-date"><span class="required" >* </span>дата видачі</label>
+							<div class="d-inline-block vertical-top">
+								<input type="date" name="date" id="6-date">
+							</div>
+							<label for="6-agency"><span class="required" >* </span>орган, що видав</label>
+							<div class="d-inline-block vertical-top">
+								<input type="text" name="6-agency" id="6-agency">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="punkt-12 punkt">
+					<span class="punkt-num">12</span>
+					<div class="string-1">
+						<div class="horizontal-block">
+							<p><span class="required" >* </span>Оформлення паспорта для</p>
+						</div>
+					</div>
+					<div class="string-2">
+						<div>
+							<label class="radio-2" for="12-constant">постійного проживання</label>
+							<div class="d-inline-block vertical-top vertical-middle border-none">
+								<input type="radio" name="residence" id="12-constant">
+							</div>
+						</div>
+						<div>
+							<label class="radio-2" for="12-temporary">тимчасових поїздок</label>
+							<div class="d-inline-block vertical-top vertical-middle border-none">
+								<input type="radio" name="residence" id="12-temporary">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="punkt-7 punkt">
+					<span class="punkt-num">7</span>
+					<div class="string-1">
+						<label for="7-seriya">серія</label>
+						<div class="d-inline-block vertical-top">
+							<input type="text" name="7-seriya" id="7-seriya">
+						</div>
+					</div>
+					<div class="string-2 d-flex">
+						<div class="vertical-block">
+							<p>Свідотство про<br>народження (для осіб<br>віком до 16 років)</p>
+						</div>
+						<div>
+							<label for="7-num">номер</label>
+							<div class="d-inline-block vertical-top">
+								<input type="text" name="7-num" id="7num">
+							</div>
+							<label for="7-num-enrollment">номер запису</label>
+							<div class="d-inline-block vertical-top">
+								<input type="text" name="7-num-enrollment" id="7-num-enrollment">
+							</div>
+							<label for="7-date-enrollment">дата запису</label>
+							<div class="d-inline-block vertical-top">
+								<input type="date" name="date" id="7-date-enrollment">
+							</div>
+							<label for="7-date">дата видачі</label>
+							<div class="d-inline-block vertical-top">
+								<input type="date" name="date" id="7-date">
+							</div>
+							<label for="7-agency">орган, що видав</label>
+							<div class="d-inline-block vertical-top">
+								<input type="text" name="7-agency" id="7-agency">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="punkt-13 punkt">
+					<span class="punkt-num">13</span>
+					<div class="string-1">
+						<div class="horizontal-block">
+							<p><span class="required" >* </span>До документа вносяться</p>
+						</div>
+					</div>
+					<div class="string-2">
+						<div>
+							<label for="13-surname">Прізвище</label>
+							<div class="d-inline-block vertical-top border-none">
+								<input type="text" name="surname" id="13-surname">
+							</div>
+						</div>
+						<div>
+							<label for="13-name">ім’я</label>
+							<div class="d-inline-block vertical-top border-none">
+								<input type="text" name="name" id="13-name">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="punkt-8 punkt">
+					<span class="punkt-num">8</span>
+					<div class="string-1">
+						<label for="8-index"><span class="required" >* </span>поштовий індекс</label>
+						<div class="d-inline-block vertical-top">
+							<input type="text" name="mail-index" id="8-index">
+						</div>
+					</div>
+					<div class="string-2 d-flex">
+						<div class="vertical-block">
+							<p>Місце проживання</p>
+						</div>
+						<div>
+							<label for="8-region"><span class="required" >* </span>область</label>
+							<div class="d-inline-block vertical-top">
+								<input type="text" name="8-region" id="8-region">
+							</div>
+							<label for="8-district">район/місто</label>
+							<div class="d-inline-block vertical-top">
+								<input type="text" name="8-district" id="8-district">
+							</div>
+							<label for="8-village">селище/село</label>
+							<div class="d-inline-block vertical-top">
+								<input type="text" name="8-village" id="8-village">
+							</div>
+							<label for="8-street"><span class="required" >* </span>вулиця</label>
+							<div class="d-inline-block vertical-top">
+								<input type="text" name="8-street" id="8-street">
+							</div>
+							<label for="8-house"><span class="required" >* </span>будинок</label>
+							<div class="d-inline-block vertical-top">
+								<input type="text" name="8-house" id="8-house">
+							</div>
+							<label for="8-apartment">квартира</label>
+							<div class="d-inline-block vertical-top">
+								<input type="text" name="8-apartment" id="8-apartment">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="punkt-14 punkt">
+					<span class="punkt-num">14</span>
+					<div class="string-1">
+						<div>
+							<label for="14-date"><span class="required" >* </span>Дата заповнення</label>
+							<div class="d-inline-block vertical-top border-none">
+								<input type="date" name="date" id="14-date">
+							</div>
+						</div>
+						<div>
+							<label for="14-signature"><span class="required" >* </span>підпис</label>
+							<div class="file-preview">
+								<img id="file-preview" src="">
+							</div>
+							<div id="file-upload">
+								<label >
+									<input type="file" name="14-signature" id="14-signature">
+									<span>Завантажити фото підписа</span>
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="string-2">
+						
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="punkt-9 punkt">
+					<span class="punkt-num">9</span>
+					<div class="string-1">
+						<label for="9-home">телефон домашній</label>
+						<div class="d-inline-block vertical-top">
+							<input type="tel" name="tel-home" id="9-home">
+						</div>
+						<label for="9-work">телефон робочий</label>
+						<div class="d-inline-block vertical-top">
+							<input type="tel" name="tel-work" id="9-work">
+						</div>
+						<label for="9-mobile"><span class="required" >* </span>телефон мобільний</label>
+						<div class="d-inline-block vertical-top">
+							<input type="tel" name="tel-mobile" id="9-mobile">
+						</div>
+					</div>
+				</div>
+				<div>
+					<button type="submit">Підтверджую</button>
+				</div>
+			</div>
+		</form>
+		
+		<script src="jsREG02.js"></script>
+	</div>
+</body>
+</html>
